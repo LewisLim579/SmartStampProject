@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Smart Stamp</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab1_title">스탬프</string>
+    <string name="tab2_title">내 쿠폰</string>
+    <string name="tab3_title">제휴 매장</string>
+    <string name="hello">Hello World, Smart Stamp!</string>
+    <string name="title_angel1">Angel-in-us-Coffee</string>
+    <string name="title_caffebene2">caffebene</string>
+    <string name="title_coffeebean3">The Coffee Bean</string>
+    <string name="title_ediya4">EDIYA COFFEE</string>
+    <string name="title_gugunaru5">COFFINE GURUNARU</string>
+    <string name="title_hollyscoffee6">HOLLYS COFFEE</string>
+    <string name="title_pascucci7">CAFFE PASCUCCI</string>
+    <string name="title_starbucks8">STARBUCKS COFFEE</string>
+    <string name="title_tomtom9">TOM N TOMS COFFEE</string>
+    <string name="title_twosome10">A TWOSOME PLACE</string>
+    <string name="title_yogerpresso11">YOGER PRESSO</string>
+    <string name="store_angel_jongro3">엔젤리너스 종로3가역점</string>
+    <string name="store_bene_samsun">카페베네 삼선교점</string>
+    <string name="store_bean_daehakro">커피빈 대학로점</string>
+    <string name="store_ediya_nowon">이디야 노원점</string>
+    <string name="store_grunaru_daehak">커핀그루나루 대학로점</string>
+    <string name="store_hollys_daechi">할리스커피 대치점</string>
+    <string name="store_pascucci_eduuni">카페파스쿠치 교대역점</string>
+    <string name="store_starbucks_hansung">스타벅스 한성대입구역점</string>
+    <string name="store_tomtom_nowon">탐앤탐스 노원점</string>
+    <string name="store_twosome_esust">투섬플레이스 이수역점</string>
+    <string name="store_yoger_seouluni">요거프레소 서울대입구역점</string>
+
+</resources>

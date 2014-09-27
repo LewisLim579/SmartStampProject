@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:showAsAction="always"
+		android:id="@+id/item1"
+		android:icon="@drawable/ic_overflow"
+		android:title="상세정보"
+		
+	/>
+
+</menu>

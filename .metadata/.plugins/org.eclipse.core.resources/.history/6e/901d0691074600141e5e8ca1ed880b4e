@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartstamp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <!-- GCM messages 수신하기 위해서 -->
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- 구글계정 접근 -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 메시지 수신하려면 절전모드로 가면 안됨 -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.newui.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.newui.permission.C2D_MESSAGE" />
+
+    <application
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_ver2_512"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.Test2" >
+        <activity
+            android:name="com.smartstamp.DashboardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- Login Activity -->
+        <activity
+            android:name="com.smartstamp.LoginActivity"
+            android:label="Login Account" >
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name="com.smartstamp.RegisterActivity"
+            android:label="Register New Account" >
+        </activity>
+        <activity android:name="com.smartstamp.IntroThin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.smartstamp.tab.press.TouchActivity" >
+        </activity>
+        <activity android:name="com.smartstamp.tab.list.Old_ListActivity" >
+        </activity>
+        <activity android:name="com.smartstamp.tab.list.ListActivity" >
+        </activity>
+        <activity android:name="com.smartstamp.tab.list.UsedActivity" >
+        </activity>
+        <activity android:name="com.smartstamp.tab.store.Tab3" >
+        </activity>
+        <activity android:name="com.smartstamp.tab.store.MapFragmentActivity_Manager" >
+        </activity>
+        <activity android:name="com.smartstamp.tab.store.List_Fragment" >
+        </activity>
+        <activity android:name="com.smartstamp.sidemenu.MyInformation" >
+        </activity>
+s
+        <activity android:name="com.smartstamp.sidemenu.Notices" >
+        </activity>
+        <activity android:name="com.smartstamp.sidemenu.CustomerService" >
+        </activity>
+        <activity android:name="com.smartstamp.sidemenu.SendMail" >
+        </activity>
+        
+         <activity android:name="com.smartstamp.sidemenu.Used_History" >
+        </activity>
+         <activity android:name="com.smartstamp.sidemenu.Save_History" >
+        </activity>
+         <activity android:name="com.smartstamp.sidemenu.Favorite_Brand" >
+        </activity>
+         <activity android:name="com.smartstamp.sidemenu.Favorite_Branch" >
+        </activity>
+        
+        
+        
+        <!-- 115 내자리 Api Key  AIzaSyBbpzRmD2mh-iYqR06qxYY0hPhthmPDx8A -->
+        <!-- 집 전용         Api Key  AIzaSyBkdohB1ZpEHvapqPSmWGKsmXEQvfTzlOQ -->
+        <!-- 인성이 115         Api Key AIzaSyAIx2-qPrg71r01iBjCGwFQzDeiA2b8zCo -->
+        <!-- 인성 노트북 Api Key  AIzaSyDVYJ9hPPdY2d3sYbSD66YPTMoal7XWveU -->
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.startstamp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.smartstamp.GCMIntentService" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDVYJ9hPPdY2d3sYbSD66YPTMoal7XWveU" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

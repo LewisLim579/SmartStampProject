@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#A52A2A"
+         >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="환영합니다!"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <!-- View Title Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="회원가입"
+            android:textColor="#FFFFFF"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+
+        <!-- Email Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#FFFFFF" />
+        <!-- Email TextField -->
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:textColor="#FFFFFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            />
+
+        <!-- Password Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Password"
+            android:textColor="#FFFFFF" />
+        <!-- Password TextField -->
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:password="true" 
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            />
+
+        <!-- ManOrWoman Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="성별"
+            android:textColor="#FFFFFF" />
+
+        <!-- ManOrWoman radiogroup -->
+
+        <RadioGroup
+            android:id="@+id/registerGenderradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+ 
+                android:text="남"
+                android:tag="1"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여"
+                android:tag="2"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+        <!-- Age Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="연령"
+            android:textColor="#FFFFFF" />
+
+                <!-- Age radiogroup -->
+
+        <RadioGroup
+            android:id="@+id/registerAgeradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/age10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10대"
+                android:tag="10"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/age20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20대"
+                android:tag="20"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF" />
+            <RadioButton
+                android:id="@+id/age30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30대"
+                android:tag="30"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF" />
+            <RadioButton
+                android:id="@+id/age40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40대"
+                android:tag="40"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF" />
+             <RadioButton
+                android:id="@+id/age50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50대 이상"
+                android:tag="50"
+                android:textSize="10dp"
+                android:textColor="#FFFFFF" />
+            
+        </RadioGroup>
+
+
+        <!-- Error message -->
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="가입"
+            android:textColor="#FFFFFF" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@null"
+            android:text="아이디가 이미 있으신가요? 로그인하세요!"
+            android:textColor="#FFF0F5"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

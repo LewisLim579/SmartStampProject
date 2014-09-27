@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#DCDCDC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/userinfotable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2" android:typeface="serif"
+        android:background="@drawable/myinfoborderline" >
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_info_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="사용자아이디"
+                android:textColor="#696969" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="match_parent"
+                android:background="#A9A9A9" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                 android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_info_gender_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="성별, 나이대"
+                     android:layout_weight="1"
+                    android:textColor="#696969" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#A9A9A9" />
+
+                <TextView
+                    android:id="@+id/tv_info_firstday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="가입일"
+                    android:textColor="#696969" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/userinfotable_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="5"
+        android:background="@drawable/myinfoborderline"
+        android:stretchColumns="0" >
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:stretchColumns="1" >
+
+            <TextView
+                android:id="@+id/tv_info_favor_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="즐겨찾는 프렌차이즈  "
+                android:textColor="#696969" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:layout_height="0.5dip"
+                android:background="#A9A9A9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_info_favor_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="즐겨찾는 매장 "
+                android:textColor="#696969" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:layout_height="0.5dip"
+                android:background="#A9A9A9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_info_save_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="쿠폰 적립 내역"
+                android:textColor="#696969" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:layout_height="0.5dip"
+                android:background="#A9A9A9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_info_use_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="쿠폰 사용 내역"
+                android:textColor="#696969" />
+        </TableRow>
+
+        <TableRow>
+
+            <View
+                android:layout_height="0.5dip"
+                android:background="#A9A9A9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_info_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="환경설정"
+                android:textColor="#696969" />
+        </TableRow>
+
+
+
+    </TableLayout>
+        <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-7dp"
+        android:layout_weight="1" android:typeface="serif"
+        android:background="@drawable/myinfoborderline" >
+                <TableRow
+            android:layout_weight="1"
+            android:id="@+id/logout_tablerow"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_info_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="로그아웃"
+                android:textColor="#696969" />
+        </TableRow>
+        </TableLayout>
+
+</LinearLayout>
