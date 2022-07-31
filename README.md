@@ -12,3 +12,4 @@ SmartStampProject
 
 이를 통해 관리자는 웹페이지를 통해 푸시 메시지 등을 보내 이벤트 알림등을 할수 있는 기능 또한 구현하였습니다
 ![IrrqKifQ](https://user-images.githubusercontent.com/3804987/182010141-89cdc8b2-05d4-481b-9108-81ba965e2657.jpeg)
+![수상인터뷰](https://user-images.githubusercontent.com/3804987/182010757-265b2457-95fc-4d36-8fab-86fb769d4848.jpeg)
