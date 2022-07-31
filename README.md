@@ -10,6 +10,8 @@ SmartStampProject
 
  단지 적립을 하는 것 만으로 그치치 않고 그 적립된 데이터가 서버로 전송되어 관리자 입장에서 자동으로 고객관리를 할수 있는 이점 또한 가지고 있게 됩니다. 
 
-이를 통해 관리자는 웹페이지를 통해 푸시 메시지 등을 보내 이벤트 알림등을 할수 있는 기능 또한 구현하였습니다
-![IrrqKifQ](https://user-images.githubusercontent.com/3804987/182010141-89cdc8b2-05d4-481b-9108-81ba965e2657.jpeg)
-![수상인터뷰](https://user-images.githubusercontent.com/3804987/182010757-265b2457-95fc-4d36-8fab-86fb769d4848.jpeg)
+이를 통해 관리자는 웹페이지를 통해 푸시 메시지 등을 보내 이벤트 알림등을 할수 있는 기능 또한 구현하였습니다  
+
+
+![IrrqKifQ](https://user-images.githubusercontent![인터뷰](https://user-images.githubusercontent.com/3804987/182010795-de3fead6-f826-4343-93ed-d0d98e77389b.jpg)
+.com/3804987/182010141-89cdc8b2-05d4-481b-9108-81ba965e2657.jpeg)
